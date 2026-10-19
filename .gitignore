@@ -6,3 +6,5 @@ coverage/
 dist/
 .env
 .vscode/settings.json
+.graphify/
+.graphifyignore
