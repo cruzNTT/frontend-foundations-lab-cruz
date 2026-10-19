@@ -1,26 +1,20 @@
-.page {
+main{
   padding-block: 2rem 4rem;
 }
 
-.site-heading,
-.content,
-.footer {
+nav,
+footer {
+  padding: 1rem;
   border: 1px solid var(--color-border);
   background: var(--color-surface);
 }
 
-.site-heading,
-.footer {
-  padding: 1rem;
-}
-
-.brand,
-.title {
+.brand {
   font-size: 1.5rem;
   font-weight: 800;
 }
 
-.menu {
+menu {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
@@ -32,44 +26,48 @@
   gap: 2rem;
   margin-block: 1rem;
   padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
 }
 
-.title {
+h1 {
   font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
-.subtitle {
+h2 {
   margin-top: 1.5rem;
   font-size: 1.2rem;
   font-weight: 750;
 }
 
-.metadata {
+meta {
   color: var(--color-text-muted);
 }
 
-.fake-button {
+button {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.7rem 1rem;
-  border-radius: 0.4rem;
+  margin: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
   background: var(--color-primary);
   color: white;
 }
 
-.related {
+section {
   padding: 1rem;
   background: var(--color-surface-muted);
 }
 
 @media (min-width: 48rem) {
-  .site-heading {
+  nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .menu {
+  menu {
     margin-top: 0;
   }
 

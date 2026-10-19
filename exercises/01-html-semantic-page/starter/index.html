@@ -10,37 +10,37 @@
     <script type="module" src="/shared/exercise-nav.mjs"></script>
   </head>
   <body>
-    <!-- TODO: sustituye la estructura generica por HTML semantico. -->
-    <div class="page container">
-      <div class="site-heading">
+    <main>
+      <nav>
         <div class="brand">Web Platform Notes</div>
-        <div class="menu">
-          <span>Inicio</span>
-          <span>Articulos</span>
-          <span>Recursos</span>
-        </div>
-      </div>
+        <menu>
+          <a href="./index.html">Inicio</a>
+          <a href="#article">Articulos</a>
+          <a href="#section">Recursos</a>
+        </menu>
+      </nav>
 
       <div class="content">
-        <div class="article">
-          <div class="title">Por que aprender la plataforma antes del framework</div>
-          <div class="metadata">Publicado el 7 de octubre de 2026</div>
-          <div class="subtitle">Las abstracciones son mas utiles cuando sabemos que abstraen.</div>
+        <article>
+          <h1>Por que aprender la plataforma antes del framework</h1>
+          <meta">Publicado el 7 de octubre de 2026</meta>
+          <h2>Las abstracciones son mas utiles cuando sabemos que abstraen.</h2>
           <p>HTML, CSS y JavaScript forman el entorno de ejecucion real de cualquier aplicacion Angular.</p>
-          <div class="subtitle">Una base que permite depurar</div>
+          <h2>Una base que permite depurar</h2>
           <p>Cuando aparece un fallo de eventos, red o layout, el framework no elimina la necesidad de entender el navegador.</p>
-          <span class="fake-button">Leer la documentacion de MDN</span>
-        </div>
+          <button>Leer la documentacion de MDN</button>
+        </article>
 
-        <div class="related">
-          <div class="subtitle">Recursos relacionados</div>
-          <div>HTML semantico</div>
-          <div>Eventos del DOM</div>
-          <div>Fetch API</div>
-        </div>
+        <section>
+          <h2>Recursos relacionados</h2>
+          <ul>HTML semantico</ul>
+          <ul>Eventos del DOM</ul>
+          <ul>Fetch API</ul>
+        </section>
       </div>
-
-      <div class="footer">Frontend Foundations Lab</div>
-    </div>
+    </main>
   </body>
+  <footer>
+    <h4>Frontend Foundations Lab</h4>
+  </footer>
 </html>
