@@ -17,7 +17,7 @@
   font-weight: 750;
 }
 
-.fake-submit {
+button {
   width: fit-content;
   padding: 0.7rem 1rem;
   border-radius: var(--radius-sm);
