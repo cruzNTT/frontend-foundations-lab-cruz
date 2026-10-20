@@ -27,11 +27,15 @@ footer {
   font-weight: 800;
 }
 
-menu {
+.menu {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
   color: var(--color-primary);
+}
+
+.menu a {
+  text-decoration: none;
 }
 
 .content {
@@ -55,7 +59,7 @@ h2 {
   font-weight: 750;
 }
 
-meta {
+.metadata {
   color: var(--color-text-muted);
 }
 
@@ -80,9 +84,9 @@ section {
     justify-content: space-between;
   }
 
-  menu {
+  /* .menu {
     margin-top: 0;
-  }
+  } */
 
   .content {
     grid-template-columns: minmax(0, 2fr) minmax(14rem, 0.7fr);
