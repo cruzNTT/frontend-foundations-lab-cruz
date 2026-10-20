@@ -1,5 +1,18 @@
-main{
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+}
+
+main {
   padding-block: 2rem 4rem;
+  flex: 1;
 }
 
 nav,
