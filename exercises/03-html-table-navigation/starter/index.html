@@ -14,29 +14,29 @@
     <script type="module" src="/shared/exercise-nav.mjs"></script>
   </head>
   <body>
-    <a href="#main" class="skip">Skip to main content</a>
+    <a href="#inventory" class="skip">Skip to main content</a>
     <main class="container exercise-shell">
       <section class="exercise-intro card">
         <h1>Inventario</h1>
         <p>Convierte este listado visual en una tabla de datos accesible.</p>
       </section>
       <section class="card">
-          <table>
+          <table id="inventory">
             <caption hidden>
               Inventario
             </caption>
             <thead>
               <tr>
-                <th>Producto</th>
-                <th>Categoria</th>
-                <th>Stock</th>
-                <th>Estado</th>
-                <th>Accion</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Accion</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Teclado mecanico</td>
+                <th scope="row">Teclado mecanico</th>
                 <td>Perifericos</td>
                 <td>18</td>
                 <td>
@@ -45,7 +45,7 @@
                 <td>Editar</td>
               </tr>
               <tr>
-                <td>Monitor 27 pulgadas</td>
+                <th scope="row">Monitor 27 pulgadas</th>
                 <td>Monitores</td>
                 <td>2</td>
                 <td>
@@ -56,7 +56,7 @@
                 <td>Editar</td>
               </tr>
               <tr>
-                <td>Webcam Full HD</td>
+                <th scope="row">Webcam Full HD</th>
                 <td>Video</td>
                 <td>0</td>
                 <td>
