@@ -26,52 +26,67 @@
       <section class="exercise-workspace card">
         <form class="registration-form" action="#success" method="get">
           <div class="field">
-            <label for="fullName">Nombre completo</label>
+            <label for="fullName">Nombre completo <span class="mandatory">*</span></label>
             <input
               id="fullName"
               name="fullName"
               placeholder="Ej. Andrea Garcia"
+              minlength="8"
+              autocomplete="name"
+              required
+              aria-required="true"
+              required=""
             />
           </div>
           <div class="field">
-            <label for="email">Correo corporativo</label>
-            <input id="email" name="email" placeholder="nombre@empresa.com" />
-            <p class="field__hint">
+            <label for="email">Correo corporativo <span class="mandatory">*</span></label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="nombre@empresa.com"
+              required
+              aria-describedby="alternativeText"
+            />
+            <p id="alternativeText" class="field__hint">
               Usaremos esta direccion para las convocatorias.
             </p>
           </div>
           <div class="field">
             <label for="startDate">Fecha de incorporacion</label>
-            <input id="startDate" name="startDate" placeholder="dd/mm/aaaa"/>
+            <input id="startDate" name="startDate" type="date" placeholder="dd/mm/aaaa" min="2008-10-22" required />
           </div>
           <div class="field">
             <label for="experience">Nivel de experiencia</label>
             <select id="experience" name="experience">
-              <option>Selecciona</option>
-              <option>Sin experiencia</option>
-              <option>Menos de un año</option>
-              <option>Uno a tres años</option>
+              <option value="Select">Selecciona</option>
+              <option value="noExperience">Sin experiencia</option>
+              <option value="lessOneYear">Menos de un año</option>
+              <option value="oneThreeYears">Uno a tres años</option>
             </select>
           </div>
-          <div class="options">
-            <p>Disponibilidad preferida</p>
-            <div>
-              <input type="radio" name="schedule" value="morning" id="morning"/>
-              <label for="morning">Mañana</label>
-            </div>
-            <div>
-              <input type="radio" name="schedule" value="afternoon" id="afternoon"/>
-              <label for="afternoon">Tarde</label>
-            </div>
-          </div>
-          <div class="options">
-            <div>
-              <input type="checkbox" name="terms" id="terms" required/>
-              <label for="terms">Acepto las normas del programa</label>
-            </div>
-          </div>
-          <button type="submit">Enviar solicitud</button>
         </form>
+        <br>
+        <form class="options">
+            <p>Disponibilidad preferida</p>
+          <label
+            ><input type="radio" name="schedule" value="morning" />
+            Mañana</label
+          >
+          <label
+            ><input type="radio" name="schedule" value="afternoon" />
+            Tarde</label
+          >
+        </form>
+        <br>
+        <form class="options">
+            <div>
+             <label><input type="checkbox" name="terms" id="terms" required>Acepto las normas del programa</label>
+            </div>
+        </form>
+        <br>
+        <button type="submit">Enviar solicitud</div>
       </section>
     </main>
   </body>
