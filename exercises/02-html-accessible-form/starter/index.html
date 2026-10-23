@@ -26,7 +26,7 @@
       <section class="exercise-workspace card">
         <form class="registration-form" action="#success" method="get">
           <div class="field">
-            <label for="fullName">Nombre completo <span class="mandatory">*</span></label>
+            <label for="fullName">Nombre completo <span aria-hidden="true" class="mandatory">*</span></label>
             <input
               id="fullName"
               name="fullName"
@@ -35,11 +35,10 @@
               autocomplete="name"
               required
               aria-required="true"
-              required=""
             />
           </div>
           <div class="field">
-            <label for="email">Correo corporativo <span class="mandatory">*</span></label>
+            <label for="email">Correo corporativo <span aria-hidden="true" class="mandatory">*</span></label>
             <input
               id="email"
               name="email"
@@ -60,33 +59,28 @@
           <div class="field">
             <label for="experience">Nivel de experiencia</label>
             <select id="experience" name="experience">
-              <option value="Select">Selecciona</option>
+              <option value="" selected>Selecciona</option>
               <option value="noExperience">Sin experiencia</option>
               <option value="lessOneYear">Menos de un año</option>
               <option value="oneThreeYears">Uno a tres años</option>
             </select>
           </div>
-        </form>
-        <br>
-        <form class="options">
-            <p>Disponibilidad preferida</p>
-          <label
-            ><input type="radio" name="schedule" value="morning" />
-            Mañana</label
-          >
-          <label
-            ><input type="radio" name="schedule" value="afternoon" />
-            Tarde</label
-          >
-        </form>
-        <br>
-        <form class="options">
-            <div>
+          <fieldset class="options">
+            <legend>Disponibilidad preferida</legend>
+            <label
+              ><input type="radio" name="schedule" value="morning" checked/>
+              Mañana</label
+            >
+            <label
+              ><input type="radio" name="schedule" value="afternoon" />
+              Tarde</label
+            >
+          </fieldset>
+          <fieldset class="options">
              <label><input type="checkbox" name="terms" id="terms" required>Acepto las normas del programa</label>
-            </div>
+          </fieldset>
+          <button type="submit">Enviar solicitud</div>
         </form>
-        <br>
-        <button type="submit">Enviar solicitud</div>
       </section>
     </main>
   </body>
