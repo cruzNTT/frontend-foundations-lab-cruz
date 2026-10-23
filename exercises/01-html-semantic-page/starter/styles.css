@@ -7,7 +7,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; 
 }
 
 main {
@@ -29,8 +29,9 @@ footer {
 
 .menu {
   display: flex;
-  gap: 1rem;
   margin-top: 1rem;
+  padding: 0.2rem;
+  gap: 1rem;
   color: var(--color-primary);
 }
 
