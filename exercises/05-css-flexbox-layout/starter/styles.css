@@ -1,28 +1,28 @@
 /* TODO: sustituye anchuras y distribuciones rigidas por Flexbox. */
-.toolbar {
-  padding: 1rem;
+*{
+  --margin-var: 16px;
+  --padding-var: 1rem;
+  --minWidth-var: 280px;
 }
 
-.toolbar__filters {
-  margin-bottom: 1rem;
+.toolbar {
+  padding: var(--padding-var);
 }
 
 .toolbar .field {
-  width: 260px;
-  margin-right: 16px;
+  margin-right: var(--margin-var);
+  padding-bottom: var(--padding-var);
 }
 
 .course-list {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: var(--margin-var);
 }
 
 .course {
-  width: 31%;
-  min-height: 360px;
-  margin-right: 2%;
-  margin-bottom: 16px;
-  padding: 1.25rem;
-  float: left;
+  display: grid;
+  padding: var(--padding-var);
 }
 
 .course__tag {
@@ -31,9 +31,11 @@
 }
 
 .course__actions {
-  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .course__actions .button {
-  float: right;
+  flex-direction: row-reverse;
 }
