@@ -7,7 +7,7 @@ No pretende enseñar cada rincón del lenguaje. Su objetivo es comprobar que una
 ## Qué incluye
 
 - Una prueba diagnóstica inicial para detectar lagunas antes de asignar el itinerario.
-- 22 retos progresivos: 21 ejercicios y un capstone final, todos con starter y criterios de aceptación.
+- 23 retos progresivos: 22 ejercicios y un capstone final, todos con starter y criterios de aceptación.
 - Una aplicación final sin framework que consume una API CRUD local.
 - Portal navegable con progreso guardado en `localStorage`.
 - API local con paginación, búsqueda, filtros, ordenación, errores simulados y subida `multipart/form-data`.
@@ -49,8 +49,13 @@ npm run check                       # valida la estructura del repositorio
 npm test                            # prueba API, estructura y starters
 npm run verify                      # ejecuta todas las comprobaciones
 npm run test:exercise -- 08         # prueba el starter del ejercicio 08
+npm run test:exercise -- 12         # prueba el starter del ejercicio indicado
+npm run test:exercises              # ejecuta todos los tests disponibles (08-18)
 npm run typecheck:exercise -- 19     # comprueba el starter TypeScript del ejercicio 19
+npm run typecheck:all                # comprueba los contratos TypeScript 19-21
 ```
+
+Los comandos se ejecutan desde la raíz del repositorio, después de `npm install`. Para una práctica concreta, sustituye `12` por su número. El test debe ejecutarse después de cada cambio: `ok` significa que ese criterio pasa y `not ok` indica qué comportamiento queda por completar.
 
 ## Itinerario recomendado
 

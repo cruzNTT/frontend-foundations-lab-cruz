@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Itinerario practico de fundamentos frontend previo a Angular.">
-    <title>Frontend Foundations Lab</title>
+    <meta name="description" content="Formacion de fundamentos frontend de CUE, NTT DATA.">
+    <title>Frontend Foundations Lab | CUE · NTT DATA</title>
     <link rel="stylesheet" href="/shared/base.css">
     <link rel="stylesheet" href="/site/styles.css">
     <script type="module" src="/site/app.mjs"></script>
@@ -15,17 +15,18 @@
     <header class="hero">
       <div class="container hero__inner">
         <div>
-          <p class="hero__eyebrow">Itinerario previo a Angular</p>
+          <p class="brand-lockup" aria-label="CUE, NTT DATA"><span>CUE</span><span>NTT DATA</span></p>
+          <p class="hero__eyebrow">Formacion especializada en Frontend</p>
           <h1>Frontend Foundations Lab</h1>
           <p class="hero__summary">
-            Aprende y demuestra HTML, CSS, JavaScript, DOM, HTTP y TypeScript mediante ejercicios reales,
-            una API local y un proyecto final sin framework.
+            Construye una base solida de HTML, CSS, JavaScript, DOM, HTTP y TypeScript mediante ejercicios
+            reales, una API local y un proyecto final sin framework.
           </p>
         </div>
         <aside class="progress-card" aria-labelledby="progress-title">
           <h2 id="progress-title">Tu progreso</h2>
-          <p><strong data-progress-count>0 de 22</strong> ejercicios completados</p>
-          <progress data-progress value="0" max="22">0 %</progress>
+          <p><strong data-progress-count>0 de 23</strong> ejercicios completados</p>
+          <progress data-progress value="0" max="23">0 %</progress>
           <button class="button button--secondary" type="button" data-reset-progress>Reiniciar progreso</button>
         </aside>
       </div>
@@ -38,8 +39,9 @@
           <h2 id="start-title">Trabaja por bloques y comprueba tus decisiones</h2>
           <p>
             Empieza por la prueba diagnóstica cuando no conozcas el nivel de la persona. Después ejecuta
-            <code>npm run dev</code>, abre cada starter y utiliza DevTools. Los ejercicios con tests indican
-            su comando en la ficha. El proyecto final sirve como puerta de entrada a Angular.
+            <code>npm run dev</code>, lee las instrucciones de cada ejercicio antes de abrir su entorno de
+            trabajo. Los ejercicios con tests indican su comando en la guia. El proyecto final sirve para
+            integrar y demostrar tus fundamentos de frontend.
           </p>
           <p class="start-panel__actions">
             <a class="button" href="/diagnostic/starter/">Abrir diagnóstico</a>
@@ -50,14 +52,14 @@
           <a href="/docs/01-learning-path.md">Itinerario</a>
           <a href="/docs/04-assessment-rubric.md">Rubrica</a>
           <a href="/docs/06-accessibility-checklist.md">Accesibilidad</a>
-          <a href="/docs/07-angular-entry-criteria.md">Paso a Angular</a>
+          <a href="/docs/07-angular-entry-criteria.md">Siguientes pasos</a>
         </nav>
       </section>
 
       <section aria-labelledby="catalog-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">22 retos progresivos</p>
+            <p class="section-kicker">23 retos progresivos</p>
             <h2 id="catalog-title">Catalogo de ejercicios</h2>
           </div>
           <p class="results-count" role="status" aria-live="polite" data-results-count></p>
@@ -91,35 +93,9 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>Frontend Foundations Lab · Formacion practica previa a Angular.</p>
+        <p><strong>CUE · NTT DATA</strong> · Frontend Foundations Lab · Formacion practica de fundamentos frontend.</p>
       </div>
     </footer>
-
-    <dialog class="exercise-dialog" data-dialog aria-labelledby="dialog-title">
-      <div class="exercise-dialog__header">
-        <div>
-          <p class="section-kicker" data-dialog-module></p>
-          <h2 id="dialog-title" data-dialog-title></h2>
-        </div>
-        <button class="icon-button" type="button" aria-label="Cerrar" data-close-dialog>×</button>
-      </div>
-      <p data-dialog-description></p>
-      <div class="dialog-columns">
-        <section>
-          <h3>Objetivos</h3>
-          <ul data-dialog-objectives></ul>
-        </section>
-        <section>
-          <h3>Criterios clave</h3>
-          <ul data-dialog-acceptance></ul>
-        </section>
-      </div>
-      <p class="command" data-dialog-command hidden></p>
-      <div class="exercise-dialog__actions">
-        <button class="button button--secondary" type="button" data-close-dialog>Volver</button>
-        <a class="button" data-dialog-open href="/">Abrir starter</a>
-      </div>
-    </dialog>
 
     <template id="exercise-card-template">
       <article class="exercise-card card">
@@ -130,7 +106,6 @@
         <div>
           <p class="exercise-module"></p>
           <h3 class="exercise-title"></h3>
-          <p class="exercise-description"></p>
         </div>
         <dl class="exercise-meta">
           <div><dt>Tiempo</dt><dd data-duration></dd></div>
@@ -141,8 +116,7 @@
             <input type="checkbox" data-complete>
             <span>Completado</span>
           </label>
-          <button class="button button--secondary" type="button" data-details>Ver detalle</button>
-          <a class="button" data-open href="/">Abrir</a>
+          <a class="button" data-open href="/">Ver instrucciones</a>
         </div>
       </article>
     </template>
