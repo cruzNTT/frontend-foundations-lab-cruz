@@ -85,10 +85,6 @@ section {
     justify-content: space-between;
   }
 
-  /* .menu {
-    margin-top: 0;
-  } */
-
   .content {
     grid-template-columns: minmax(0, 2fr) minmax(14rem, 0.7fr);
   }
