@@ -4,7 +4,9 @@
 }
 
 .metrics {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 16px;
 }
 
 .metric,
@@ -14,30 +16,24 @@
 }
 
 .metric {
-  width: 32%;
-  display: inline-block;
   vertical-align: top;
 }
 
 .metric span,
 .metric small {
-  display: block;
+  display: flex;
   color: var(--color-text-muted);
 }
 
 .metric strong {
-  display: block;
   margin-block: 0.4rem;
   font-size: 2rem;
 }
 
 .activity {
-  width: 65%;
-  display: inline-block;
+  display: flex;
 }
 
 .next {
-  width: 32%;
-  display: inline-block;
   vertical-align: top;
 }
