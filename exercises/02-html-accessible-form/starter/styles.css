@@ -6,7 +6,7 @@
 
 .options {
   display: grid;
-  gap: 0.65rem;
+  gap: 1.25rem;
   padding: 1rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
@@ -17,7 +17,7 @@
   font-weight: 750;
 }
 
-.fake-submit {
+button {
   width: fit-content;
   padding: 0.7rem 1rem;
   border-radius: var(--radius-sm);
