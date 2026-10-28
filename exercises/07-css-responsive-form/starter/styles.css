@@ -1,8 +1,8 @@
 /* TODO: empieza por movil y añade responsive, estados y reduced motion. */
 .responsive-layout {
-  width: 1100px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
   gap: 32px;
 }
 
@@ -24,6 +24,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  align-items: center;
 }
 
 .field--full {
@@ -50,4 +51,10 @@ input:invalid {
 
 .button:hover {
   transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+ .responsive-form {
+  grid-template-columns: 1fr;
+ }
 }
