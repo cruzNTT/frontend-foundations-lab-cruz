@@ -1,37 +1,79 @@
 <!doctype html>
-<html lang="es" data-exercise-id="03-html-table-navigation" data-exercise-title="03 · Tabla de datos y navegacion">
+<html
+  lang="es"
+  data-exercise-id="03-html-table-navigation"
+  data-exercise-title="03 · Tabla de datos y navegacion"
+>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starter · Tabla de datos</title>
-    <link rel="stylesheet" href="/shared/base.css">
-    <link rel="stylesheet" href="/shared/exercise-shell.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="/shared/base.css" />
+    <link rel="stylesheet" href="/shared/exercise-shell.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <script type="module" src="/shared/exercise-nav.mjs"></script>
   </head>
   <body>
-    <!-- TODO: añade skip link -->
+    <a href="#inventory" class="skip">Skip to main content</a>
     <main class="container exercise-shell">
       <section class="exercise-intro card">
         <h1>Inventario</h1>
         <p>Convierte este listado visual en una tabla de datos accesible.</p>
       </section>
-
-      <section class="exercise-workspace card">
-        <div class="data-grid" id="inventory">
-          <div class="row row--header">
-            <span>Producto</span><span>Categoria</span><span>Stock</span><span>Estado</span><span>Accion</span>
-          </div>
-          <div class="row">
-            <span>Teclado mecanico</span><span>Perifericos</span><span>18</span><span class="status status--ok">●</span><span>Editar</span>
-          </div>
-          <div class="row">
-            <span>Monitor 27 pulgadas</span><span>Monitores</span><span>2</span><span class="status status--warning">●</span><span>Editar</span>
-          </div>
-          <div class="row">
-            <span>Webcam Full HD</span><span>Video</span><span>0</span><span class="status status--danger">●</span><span>Editar</span>
-          </div>
-        </div>
+      <section class="card">
+          <table id="inventory">
+            <caption hidden>
+              Inventario
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Accion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Teclado mecanico</th>
+                <td>Perifericos</td>
+                <td>18</td>
+                <td>
+                  <span class="status status--ok" aria-label="ok">●</span>
+                </td>
+                <td>
+                  <button type="button">Editar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Monitor 27 pulgadas</th>
+                <td>Monitores</td>
+                <td>2</td>
+                <td>
+                  <span class="status status--warning" aria-label="warning"
+                    >●</span
+                  >
+                </td>
+                <td>
+                  <button type="button">Editar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Webcam Full HD</th>
+                <td>Video</td>
+                <td>0</td>
+                <td>
+                  <span class="status status--danger" aria-label="danger"
+                    >●</span
+                  >
+                </td>
+                <td>
+                  <button type="button">Editar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
       </section>
     </main>
   </body>
