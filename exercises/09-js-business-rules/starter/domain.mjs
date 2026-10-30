@@ -8,8 +8,9 @@ export class StockError extends Error {
 }
 
 export function calculateFinalPrice({ price, discountPercent = 0, taxPercent = 0 }) {
-  // TODO
-  return price;
+  discountPrice = price - discountPercent;
+  finalPrice = newPrice + taxPercent;
+  return finalPrice.toFixed(2);
 }
 
 export function validateProductDraft(draft) {
